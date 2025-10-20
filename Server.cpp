@@ -28,7 +28,8 @@ else {
     else {
         cout<<'Server UDP in ascolto sulla porta: '<<PORT<<'\n';
         while (true) {
-            memset(buffer, 0, Buffer)
+            memset(buffer, 0, Buffer_Size)
+            
         }
     }
 }
