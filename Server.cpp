@@ -48,7 +48,7 @@ int main() {
                   << inet_ntoa(client_addr.sin_addr) 
                   << ": " << buffer << std::endl;
 
-        // (opzionale) Risposta al client
+        //Risposta al client
         std::string risposta = "Ricevuto: " + std::string(buffer);
         sendto(sockfd, risposta.c_str(), risposta.size(), 0,
                (struct sockaddr*)&client_addr, client_len);
