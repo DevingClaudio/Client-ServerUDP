@@ -37,8 +37,7 @@ int main() {
     // 4. Loop per ricevere messaggi
     while (true) {
         memset(buffer, 0, BUFFER_SIZE);
-        int len = recvfrom(sockfd, buffer, BUFFER_SIZE, 0,
-                           (struct sockaddr*)&client_addr, &client_len);
+        int len = recvfrom(sockfd, buffer, BUFFER_SIZE, 0,(struct sockaddr*)&client_addr, &client_len);
         if (len < 0) {
             perror("Errore nella ricezione");
             break;
